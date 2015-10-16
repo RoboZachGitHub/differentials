@@ -16,6 +16,23 @@ def differentials(x, step_size):
 
 	return 0
 
-differentials(1, 0.05)
+
+
+
+def scnd_differential(x, step_size):
+	h = float(step_size)
+	centr_2nd_diff = (cos_x(x + h) + cos_x(x - h) - 2*cos_x(x))/(h*h)
+	print "second differntial is: %f" % centr_2nd_diff
+
+	return 0
+
+
+
+differentials(1.0, 0.00005)
+scnd_differential(1.0, 0.00005)
+
+
+
+
 
 
